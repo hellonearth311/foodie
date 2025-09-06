@@ -4,7 +4,7 @@
   const faqItems = [
     {
       question: 'Who can participate?',
-      answer: 'Anyone under 18 years old who is part of Hack Club can join!'
+      answer: 'Anyone under 18'
     },
     {
       question: 'What counts as a food-related project?',
@@ -17,6 +17,18 @@
     {
       question: 'Can I work in a team?',
       answer: 'Nope! Earn your snacks yourself!'
+    },
+    {
+      question: 'Can I use AI?',
+      answer: 'No!'
+    },
+    {
+      question: 'Is there a time requirement?',
+      answer: 'Atleast 1 hour please.'
+    },
+    {
+      question: 'When is the deadline?',
+      answer: 'We haven\'t set one yet, but we will soon!'
     }
   ];
 </script>
@@ -26,10 +38,10 @@
     <section class="bg-white rounded-xl shadow p-8">
       <h2 class="text-3xl font-bold text-blue-600 mb-4 text-center">Requirements</h2>
       <ul class="mt-6 space-y-3 text-gray-700 list-disc list-inside">
-        <li>Build a food-related app or project 🍕</li>
-        <li>Code for at least 10 hours 🍔</li>
-        <li>Submit before the deadline 🍟</li>
-        <li>Have fun 😋</li>
+        <li>Build a food-related app or project!</li>
+        <li>Submit before the deadline!</li>
+        <li>Enjoy your meal!</li>
+        <li>Have fun!</li>
       </ul>
     </section>
 
