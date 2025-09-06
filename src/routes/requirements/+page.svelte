@@ -4,7 +4,7 @@
   const faqItems = [
     {
       question: 'Who can participate?',
-      answer: 'Anyone who loves coding and food! All skill levels welcome.'
+      answer: 'Anyone under 18 years old who is part of Hack Club can join!'
     },
     {
       question: 'What counts as a food-related project?',
