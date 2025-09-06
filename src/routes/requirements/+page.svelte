@@ -4,7 +4,7 @@
   const faqItems = [
     {
       question: 'Who can participate?',
-      answer: 'Anyone under 18'
+      answer: 'Anyone under 18!'
     },
     {
       question: 'What counts as a food-related project?',
@@ -12,11 +12,11 @@
     },
     {
       question: 'How do I log my coding hours?',
-      answer: 'Use hackatime!'
+      answer: 'Use Hackatime!'
     },
     {
       question: 'Can I work in a team?',
-      answer: 'Nope! Earn your snacks yourself!'
+      answer: 'Nope! Earn your food yourself!'
     },
     {
       question: 'Can I use AI?',
