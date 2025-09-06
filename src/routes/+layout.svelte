@@ -14,7 +14,7 @@
 	<ul class="flex space-x-6 text-gray-700 font-medium">
 		<li><a href="/" class="hover:text-red-500">Home</a></li>
 		<li><a href="/requirements" class="hover:text-red-500">Requirements</a></li>
-		<li><a href="/submit" class="hover:text-red-500">RSVP</a></li>
+		<li><a href="https://forms.fillout.com/t/w4S4daqvy4us" class="hover:text-red-500">RSVP</a></li>
 	</ul>
 </nav>
 

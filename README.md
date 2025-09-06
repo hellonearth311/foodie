@@ -4,3 +4,5 @@ This is the source code for the website behind the Foodie YSWS, sponsored by [Ha
 ## Where am I??
 If you want to go to the website for the YSWS, click here!
 > it doesnt work yet since i don have a site
+
+Also, go RSVP pls!! click [here](https://forms.fillout.com/t/w4S4daqvy4us).
