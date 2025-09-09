@@ -27,7 +27,7 @@
       <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">How It Works</h2>
       <ul class="text-gray-700 leading-relaxed space-y-2 list-decimal list-inside">
         <li>Sign up and log your coding hours.</li>
-        <li>For every hour you code, you earn $3 towards delicious meals.</li>
+        <li>For every hour you code, you earn $5 towards delicious meals.</li>
         <li>Redeem your earnings for free food!!</li>
         <li>Enjoy your meal and get back to coding! Or anything else. We don't judge.</li>
       </ul>
