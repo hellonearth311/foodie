@@ -8,7 +8,7 @@
     <div class="text-center">
       <h1 class="text-4xl font-bold text-blue-600">{title}</h1>
       <p class="mt-4 text-lg text-gray-700">
-        You code, you eat! Each hour you code = $3 towards your next meal.
+        You code, you eat! Each hour you code = $5 towards your next meal.
       </p>
       <a href="https://forms.fillout.com/t/w4S4daqvy4us" class="mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition inline-block">
         RSVP Now! 
