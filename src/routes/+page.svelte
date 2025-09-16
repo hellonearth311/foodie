@@ -7,7 +7,7 @@
 		},
 		{
 			question: 'Who can participate?',
-			answer: 'Anyone under 19!'
+			answer: 'Anyone under 19 in Hack Club!'
 		},
 		{
 			question: 'What counts as a food-related project?',
@@ -24,8 +24,8 @@
 		},
 		{
 			question: 'When is the deadline?',
-			answer: "We haven't set one yet, but we will soon!"
-		}
+			answer: "We haven’t set one yet, but probably sometime around early-mid December 2025, as our sponsor will be able to sponsor in October."
+		}	
 	];
 </script>
 
