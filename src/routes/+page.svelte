@@ -27,6 +27,12 @@
 			answer: "We haven’t set one yet, but probably sometime around early-mid December 2025, as our sponsor will be able to sponsor in October."
 		}	
 	];
+
+	const dos = [
+		"use ANY framework to build a website that's main concept is related to food (ask in <a href='https://hackclub.slack.com/archives/C09DLGM81E1' class='font-bold'>#foodie-ysws</a> to be sure!)",
+		'code for AT LEAST <b>3 hours</b>'
+	];
+	const donts = ['use AI - not for even the README.md'];
 </script>
 
 <div
@@ -35,7 +41,9 @@
 	<div class="w-full max-w-2xl space-y-10 xl:max-w-6xl">
 		<div class="">
 			<h1 class="text-8xl font-bold">foodie</h1>
-			<p class="mt-4 text-[2.21rem]">build a food-related website/app, get $5 for every hour you spent on it!</p>
+			<p class="mt-4 text-[2.21rem]">
+				build a food-related website/app, get $5 for every hour you spent on it!
+			</p>
 			<a
 				href="https://forms.fillout.com/t/w4S4daqvy4us"
 				class="mt-6 inline-block rounded-lg bg-gray-200 px-6 py-3 text-blue-800 transition hover:bg-gray-300"
@@ -48,16 +56,12 @@
 			<section class="rounded-2xl bg-white/90 p-5 text-start xl:col-span-2 xl:max-w-xl">
 				<h2 class="mb-4 text-3xl font-bold text-blue-900">Do's and Don'ts</h2>
 				<ul class="list-inside list-decimal space-y-2 leading-relaxed">
-					<li class="text-green-600">
-						<span class="font-bold">Do</span> use ANY framework to build a website that's main concept is related to food (ask in
-						<a href="https://hackclub.slack.com/archives/C09DLGM81E1" class="font-bold"
-							>#foodie-ysws</a
-						> to be sure!)
-					</li>
-					<li class="text-green-600">
-						<span class="font-bold">Do</span> code for AT LEAST <b>3 hours</b>
-					</li>
-					<li class="text-red-800"><span class="font-bold">Don't</span> use AI - not for even the README.md</li>
+					{#each dos as d}
+						<li class="text-green-600"><span class="font-bold">Do</span> {@html d}</li>
+					{/each}
+					{#each donts as d}
+						<li class="text-red-800"><span class="font-bold">Don't</span> {@html d}</li>
+					{/each}
 				</ul>
 			</section>
 			<section class="rounded-2xl bg-white/90 p-5 text-start xl:col-span-2 xl:max-w-xl">
