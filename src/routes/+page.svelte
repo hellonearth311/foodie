@@ -35,10 +35,10 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-	<div class="checkered-bar checkered-bar--top"></div>
+	<div class="checkered-bar checkered-bar--top" style="margin-bottom: 2em;"></div>
 
-	<div class="mx-auto w-full max-w-7xl px-4 py-6 md:py-8 flex-1 content-wrap">
-		<section class="mb-10 text-center">
+	<div class="mx-auto w-full max-w-7xl px-6 md:px-8 py-8 flex-1">
+		<section class="mb-14 text-center">
 		<h1 class="mb-5 text-[4rem] font-bold uppercase leading-tight text-accent md:text-[5rem] font-lcmogi logo">
 			FOODIE
 		</h1>
@@ -106,5 +106,5 @@
 		</section>
 	</div>
 	</div>
-	<div class="checkered-bar checkered-bar--bottom"></div>
+	<div class="checkered-bar checkered-bar--bottom" style="margin-top: 2em;"></div>
 </div>

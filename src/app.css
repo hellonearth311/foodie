@@ -46,6 +46,17 @@ body {
 	display: none;
 }
 
+html,
+body {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	display: none;
+}
+
 .checkered-bar {
 	--checker-size: 40px;
 	--checker-offset-x: 0px;
@@ -69,7 +80,7 @@ body {
 
 .checkered-bar--top {
 	--checker-size: var(--top-checker-size);
-	--checker-offset-y: 0px;
+    --checker-offset-y: 0px;
 }
 
 .checkered-bar--bottom {
@@ -78,7 +89,7 @@ body {
 }
 
 .content-wrap {
-	min-height: calc(100vh - (var(--top-checker-size) * 2) - (var(--bottom-checker-size) * 2));
+	min-height: calc(100vh - (var(--top-checker-size) * 2) - (var(--bottom-checker-size) * 2) - 4em);
 }
 
 .logo {
