@@ -11,8 +11,7 @@
 		},
 		{
 			question: 'What counts as a food-related project?',
-			answer:
-				'Anything that involves food, snacks, recipes, restaurants, or even food-themed games.'
+			answer: 'Anything that involves food, snacks, recipes, restaurants, or even food-themed games.'
 		},
 		{
 			question: 'Can I work in a team?',
@@ -24,65 +23,88 @@
 		},
 		{
 			question: 'When is the deadline?',
-			answer: "We haven’t set one yet, but probably sometime around early-mid December 2025, as our sponsor will be able to sponsor in October."
-		}	
+			answer: "We haven’t set one yet, but probably sometime around early-mid December 2025."
+		}
 	];
 
 	const dos = [
-		"use ANY framework to build a website that's main concept is related to food (ask in <a href='https://hackclub.slack.com/archives/C09DLGM81E1' class='font-bold'>#foodie-ysws</a> to be sure!)",
+		"use ANY language to build an app thats main concept is related to food (ask in <a href='https://hackclub.slack.com/archives/C09DLGM81E1' class='font-bold underline text-accent hover:text-accent-2'>the slack</a> to be sure!)",
 		'code for AT LEAST <b>3 hours</b>'
 	];
 	const donts = ['use AI - not for even the README.md'];
 </script>
 
-<div
-	class="flex items-center justify-center bg-blue-800 px-4 py-12 font-[Saira] text-white xl:h-screen"
->
-	<div class="w-full max-w-2xl space-y-10 xl:max-w-6xl">
-		<div class="">
-			<h1 class="text-8xl font-bold">foodie</h1>
-			<p class="mt-4 text-[2.21rem]">
-				build a food-related website/app, get $5 for every hour you spent on it!
-			</p>
+<div class="flex flex-col min-h-screen">
+	<div class="checkered-bar checkered-bar--top"></div>
+
+	<div class="mx-auto w-full max-w-7xl px-4 py-6 md:py-8 flex-1 content-wrap">
+		<section class="mb-10 text-center">
+		<h1 class="mb-5 text-[4rem] font-bold uppercase leading-tight text-accent md:text-[5rem] font-lcmogi logo">
+			FOODIE
+		</h1>
+		<p class="mx-auto max-w-3xl text-[1.35rem] leading-relaxed text-dark md:text-[1.7rem]">
+			build a food-related website/app, get food credits!
+		</p>
+		<div class="mt-7">
 			<a
 				href="https://forms.fillout.com/t/w4S4daqvy4us"
-				class="mt-6 inline-block rounded-lg bg-gray-200 px-6 py-3 text-blue-800 transition hover:bg-gray-300"
+				class="inline-block rounded-lg bg-accent px-7 py-3 text-lg font-bold uppercase text-white transition hover:bg-accent-2"
 				target="_blank"
 			>
-				RSVP now!
+				Submit!
 			</a>
 		</div>
-		<div class="grid gap-4 xl:grid-flow-col xl:grid-cols-3 xl:grid-rows-2">
-			<section class="rounded-2xl bg-white/90 p-5 text-start xl:col-span-2 xl:max-w-xl">
-				<h2 class="mb-4 text-3xl font-bold text-blue-900">Do's and Don'ts</h2>
-				<ul class="list-inside list-decimal space-y-2 leading-relaxed">
-					{#each dos as d}
-						<li class="text-green-600"><span class="font-bold">Do</span> {@html d}</li>
-					{/each}
-					{#each donts as d}
-						<li class="text-red-800"><span class="font-bold">Don't</span> {@html d}</li>
-					{/each}
-				</ul>
-			</section>
-			<section class="rounded-2xl bg-white/90 p-5 text-start xl:col-span-2 xl:max-w-xl">
-				<h2 class="mb-4 text-3xl font-bold text-blue-900">How It Works</h2>
-				<ul class="list-inside list-decimal space-y-2 leading-relaxed text-blue-900">
-					<li>
+	</section>
+
+	<div class="grid gap-7 lg:grid-cols-2 xl:grid-cols-3">
+		<section id="about" class="rounded-2xl border-2 border-accent/30 bg-white/80 p-7 backdrop-blur-sm">
+			<h2 class="mb-5 text-[1.7rem] font-bold uppercase text-accent">Do's and Don'ts</h2>
+			<ul class="space-y-3 text-base leading-relaxed text-dark">
+				{#each dos as d}
+					<li class="flex items-start gap-2">
+						<span class="mt-1 font-bold text-accent">✓</span>
+						<span><span class="font-bold text-accent">Do:</span> {@html d}</span>
+					</li>
+				{/each}
+				{#each donts as d}
+					<li class="flex items-start gap-2">
+						<span class="mt-1 font-bold text-danger">✗</span>
+						<span><span class="font-bold text-danger">Don't:</span> {@html d}</span>
+					</li>
+				{/each}
+			</ul>
+		</section>
+
+		<section id="howto" class="rounded-2xl border-2 border-accent/30 bg-white/80 p-7 backdrop-blur-sm">
+			<h2 class="mb-5 text-[1.7rem] font-bold uppercase text-accent">How It Works</h2>
+			<ol class="space-y-3 text-base leading-relaxed text-dark">
+				<li class="flex items-start gap-2">
+					<span class="font-bold text-accent">1.</span>
+					<span>
 						Setup <a
 							href="https://hackatime.hackclub.com"
-							class="rounded-xl bg-blue-900 px-2 py-1 font-bold text-white">Hackatime</a
+							class="inline-block rounded bg-accent px-2 py-1 font-bold text-white hover:bg-accent-2">Hackatime</a
 						> and log your coding hours.
-					</li>
-					<li>For every hour you code, you earn $5 towards delicious meals.</li>
-					<li>Redeem your earnings for free food!!</li>
-				</ul>
-			</section>
-			<section
-				class="h-[30rem] rounded-2xl bg-white/90 p-5 text-start xl:col-span-20 xl:row-span-2"
-			>
-				<h2 class="mb-4 text-3xl font-bold text-blue-900">FAQ</h2>
+					</span>
+				</li>
+				<li class="flex items-start gap-2">
+					<span class="font-bold text-accent">2.</span>
+					<span>Earn food grants based on your Hackatime!</span>
+				</li>
+				<li class="flex items-start gap-2">
+					<span class="font-bold text-accent">3.</span>
+					<span>Redeem your earnings for free food!</span>
+				</li>
+			</ol>
+		</section>
+
+		<section id="faq" class="rounded-2xl border-2 border-accent/30 bg-white/80 p-7 backdrop-blur-sm lg:col-span-2 xl:col-span-1 flex flex-col h-[30rem]">
+			<h2 class="mb-4 text-[1.7rem] font-bold uppercase text-accent">FAQ</h2>
+			<div class="mt-2 overflow-y-auto no-scrollbar flex-1">
 				<Accordion items={faqItems} />
-			</section>
-		</div>
+			</div>
+		</section>
 	</div>
+	</div>
+	<div class="checkered-bar checkered-bar--bottom"></div>
 </div>

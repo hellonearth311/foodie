@@ -13,11 +13,11 @@
 	{#each items as item, idx}
 		<div>
 			<button
-				class="flex w-full items-center justify-between rounded bg-gray-100 px-4 py-2 text-left font-semibold text-gray-900 hover:bg-gray-200 focus:outline-none"
+				class="flex w-full items-center justify-between rounded-lg border-2 border-accent/20 bg-white/60 px-4 py-3 text-left font-bold text-dark hover:border-accent/40 hover:bg-white/80 focus:outline-none transition"
 				on:click={() => toggle(idx)}
 			>
 				<span>{item.question}</span>
-				<span class="size-4">
+				<span class="size-5 text-accent">
 					{#if openIdx === idx}
 						<UpArrow />
 					{:else}
@@ -27,7 +27,7 @@
 			</button>
 			{#if openIdx === idx}
 				<div transition:fly={{ y: 10, duration: 250 }}>
-					<p class="mt-2 px-4 text-gray-700">{item.answer}</p>
+					<p class="mt-2 px-4 py-2 text-dark">{item.answer}</p>
 				</div>
 			{/if}
 		</div>

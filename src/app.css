@@ -1,3 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif:ital,wght@0,400;0,700&display=swap');
+
 @import 'tailwindcss';
+
+
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--color-primary: #fef5f0;
+	--color-grid: #f5bec4;
+	--color-accent: #ff5733;
+	--color-accent-2: #ff7849;
+	--color-danger: #ff5733;
+	--color-dark: #563D2D;
+	--color-ink: #563D2D;
+	--color-muted: #f4e4d7;
+	
+	--font-sans: 'Young Serif', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, serif;
+}
+
+:root {
+	--top-checker-size: 28px;
+	--bottom-checker-size: 28px;
+}
+
+body {
+	background-color: var(--color-primary);
+	background-image:
+		linear-gradient(to right, var(--color-grid) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
+	background-size: 40px 40px;
+	background-repeat: repeat;
+	background-position: center top;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.no-scrollbar {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.checkered-bar {
+	--checker-size: 40px;
+	--checker-offset-x: 0px;
+	--checker-offset-y: 0px;
+
+	height: calc(var(--checker-size) * 2);
+
+	background:
+	  conic-gradient(
+		var(--color-accent) 25%,
+		var(--color-primary) 0 50%,
+		var(--color-accent) 0 75%,
+		var(--color-primary) 0
+	  )
+	  var(--checker-offset-x) var(--checker-offset-y)
+	  / calc(var(--checker-size) * 2) calc(var(--checker-size) * 2);
+	background-repeat: repeat-x;
+	width: 100%;
+	flex-shrink: 0;
+}
+
+.checkered-bar--top {
+	--checker-size: var(--top-checker-size);
+	--checker-offset-y: 0px;
+}
+
+.checkered-bar--bottom {
+	--checker-size: var(--bottom-checker-size);
+	--checker-offset-y: 0px;
+}
+
+.content-wrap {
+	min-height: calc(100vh - (var(--top-checker-size) * 2) - (var(--bottom-checker-size) * 2));
+}
+
+.logo {
+	color: var(--color-accent);
+	-webkit-text-stroke: 16px #5a3d2b;
+	text-shadow: 
+		1px 1px 0 #5a3d2b,
+		2px 2px 0 #5a3d2b,
+		3px 3px 0 #5a3d2b,
+		4px 4px 0 #5a3d2b,
+		5px 5px 0 #5a3d2b,
+		6px 6px 0 #5a3d2b,
+		7px 7px 0 #5a3d2b,
+		8px 8px 0 #5a3d2b,
+		9px 9px 0 #5a3d2b,
+		10px 10px 0 #5a3d2b,
+		11px 11px 0 #5a3d2b,
+		12px 12px 0 #5a3d2b,
+		13px 13px 0 #5a3d2b,
+		14px 14px 0 #5a3d2b,
+		15px 15px 0 #5a3d2b,
+		16px 16px 0 #6d4c37;
+	font-weight: 900;
+	paint-order: stroke fill;
+	letter-spacing: 0.02em;
+}
