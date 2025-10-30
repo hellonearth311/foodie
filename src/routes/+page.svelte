@@ -47,7 +47,7 @@
 		</p>
 		<div class="mt-7">
 			<a
-				href="https://forms.fillout.com/t/w4S4daqvy4us"
+				href="https://submit.hackclub.com/foodie"
 				class="inline-block rounded-lg bg-accent px-7 py-3 text-lg font-bold uppercase text-white transition hover:bg-accent-2"
 				target="_blank"
 			>
