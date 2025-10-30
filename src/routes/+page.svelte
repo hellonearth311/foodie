@@ -25,7 +25,7 @@
 		},
 		{
 			question: 'When is the deadline?',
-			answer: "We haven’t set one yet, but probably sometime around early-mid December 2025."
+			answer: "November 14, 2025"
 		}
 	];
 
