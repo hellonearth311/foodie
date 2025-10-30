@@ -1,3 +1,5 @@
+<title>Foodie</title>
+
 <script lang="ts">
 	import Accordion from '$lib/Accordion.svelte';
 	const faqItems = [
